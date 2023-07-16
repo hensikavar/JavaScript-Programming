@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        num = parseInt(prompt("Enter the number : "));
+        temp = num;
+        numOfDigits = 0;
+        while(num!=0){
+            numOfDigits++;
+            num = parseInt(num/10);
+        }
+
+        num = temp;
+        newNum = 0;
+
+        while(num!=0){
+            var r = num%10;
+            newNum = newNum + Math.pow(r,numOfDigits);
+            num = parseInt(num/10);
+        }
+
+        if(temp == newNum){
+            document.write("Number is armstrong number.");
+        }
+        else{
+            document.write("Number is not armstrong number.");
+        }
+    </script>
+</body>
+</html>
