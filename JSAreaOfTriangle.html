@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    var firstSide = parseFloat(prompt("Enter the first side of triangle : "));
+    var secondSide = parseFloat(prompt("Enter the second side of triangle : "));
+    var thirdSide = parseFloat(prompt("Enter the third side of triangle : "));
+    var semiPerimeter = (firstSide + secondSide + thirdSide) / 2;
+    var area = Math.sqrt(semiPerimeter*(semiPerimeter-firstSide)*(semiPerimeter-secondSide)*(semiPerimeter-thirdSide));
+    alert(`Area of the triangle will be ${area}.`);
+</script>
+</html>
