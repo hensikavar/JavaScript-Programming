@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    const myNum = Math.ceil(Math.random()*9-1);
+
+    var num = parseInt(prompt("Enter a number betweem 1 to 10 : "));
+    var counter = 1;
+    while(myNum != num){
+        var num = parseInt(prompt("Enter a number betweem 1 to 10 : "));
+        counter++;
+    }
+
+    if(myNum == num){
+        alert(`You guessed the correct number in ${counter} try.`);
+    }
+</script>
+</html>
